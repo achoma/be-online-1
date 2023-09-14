@@ -1,10 +1,120 @@
 :root{
     --logo-color: #84E607;
+    --background-green:#E2FFBE;
+    --background: #D4EDB5;
+    --background-grey: #F8F8F8;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #C6CFBB;
+    --dark-grey: #878D80; 
+    --mega-dark-grey:#212220; 
 }
+
 ul{
     list-style-type: none;
 }
+
+
+html{
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: auto;
+}
+section {
+    padding-top: 50px;
+  }
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+    max-width: 1158px;
+  }
+/* ----- Nagłówek ----- */
 header{
     display: flex;
     justify-content: space-between;
+    padding: 10px;   
 }
+.header-contect{ display: flex;
+    gap: 30px;    justify-content: flex-end;
+    padding-top: 16px;
+
+}
+.header-contect a{text-decoration: none;
+font-size: 16px;
+color: var(--dark-grey);
+}
+.header-menu{display: flex;
+    gap: 40px;    justify-content: flex-end;
+padding-top: 30px;
+}
+.header-menu a{text-decoration: none;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.header-menu a:hover, 
+.header-menu a:focus {
+    text-shadow: 1px 1px 2px var(--logo-color);}
+
+
+/* ----- Sekcja główna ------ */
+
+.main{display: flex;}
+.main-item{background: var(--background-grey);
+    border-top: 3px solid var(--black);}
+.main-text{display: inline;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+h1{font-size: 50px;
+    color: var(--mega-dark-grey);
+text-align: center;}
+
+.main-button{width: 180px;
+    height: 45px;
+    flex-shrink: 0;
+    font-size: 18px;
+border-radius: 10px;
+background: var(--background-green);
+border-color: var(--black);
+margin-top: 20px;}
+.main-button:focus,
+.main-button:hover{background: var(--logo-color);}
+/* ----- Stopka ----- */
+.footer{ display: flex;    
+    justify-content: space-between;
+    border-top: 3px solid var(--black);
+}
+.footer-sm{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+    padding-right: 60px; 
+}
+.footer-sm li{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+background-color: var(--mega-dark-grey);
+}
+.footer-icon-sm{fill: var(--white);
+    margin: 8px;
+    width: 24px;
+    height: 24px;}
+.footer-sm li:hover, 
+.footer-sm li:focus{
+    background-color: var(--logo-color);
+}
+
+/* ----- Ostatnia stopka ----- */
+
+footer {display: flex;
+    justify-content: center;
+    background: var(--black);
+    color: var(--grey);
+    padding: 10px;
+    font-size: 12px;}
