@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page Sprzedażowy</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="hero">
+            <h1>Profesjonalne strony internetowe dla Twojego biznesu</h1>
+            <p>Szybka realizacja i indywidualne podejście!</p>
+            <button onclick="scrollToForm()">Zamów bezpłatną konsultację</button>
+        </header>
+
+        <section class="benefits">
+            <h2>Dlaczego warto?</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Szybka realizacja" /> Szybka realizacja (7 dni
+                    roboczych)
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Indywidualne podejście" /> Indywidualne podejście
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/100" alt="Wsparcie" /> 3 miesiące wsparcia technicznego gratis
+                </li>
+            </ul>
+        </section>
+
+        <section class="how-it-works">
+            <h2>Jak to działa?</h2>
+            <p>1. Wypełnij formularz kontaktowy</p>
+            <p>2. Omów swoje potrzeby i wybierz pakiet</p>
+            <p>3. Otrzymaj stronę w ustalonym terminie</p>
+        </section>
+
+        <section class="portfolio">
+            <h2>Nasze realizacje</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Przykładowa realizacja" />
+            <p>Case study: Jak pomogliśmy klientowi zwiększyć sprzedaż</p>
+        </section>
+
+        <section class="testimonials">
+            <h2>Opinie klientów</h2>
+            <blockquote>"Profesjonalna obsługa i szybka realizacja!" - Anna</blockquote>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Skontaktuj się z nami</h2>
+            <form>
+                <label>Imię i nazwisko:<input type="text" required /></label>
+                <label>Email:<input type="email" required /></label>
+                <label>Opis projektu:<textarea required></textarea></label>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+
+        <script>
+            function scrollToForm() {
+                document.getElementById("contact").scrollIntoView({behavior: "smooth"});
+            }
+        </script>
+
+        <link rel="stylesheet" href="styles.css" />
+    </body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    .hero {
+        background: #007bff;
+        color: white;
+        padding: 50px;
+    }
+    button {
+        background: #ffd700;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .benefits ul {
+        list-style: none;
+        padding: 0;
+    }
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        margin: auto;
+    }
+    .contact input,
+    .contact textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .contact button {
+        background: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
